@@ -10,13 +10,14 @@ const defaultTodos = [
   { text: 'Tomar el curso Intro a React.js', completed: false },
   { text: 'Llorar con la llorona', completed: false },
   { text: 'Tomar mate', completed: false },
+  { text: 'Comer', completed: false },
 ]
 
 function App() {
   return (
     <>
 
-      <TodoCounter  completed={16} total={25}/>
+      <TodoCounter  completed={defaultTodos.filter(todo => todo.completed).length} total={defaultTodos.length}/>
       <TodoSearch />
 
       <TodoList> 
