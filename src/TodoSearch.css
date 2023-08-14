@@ -1,0 +1,35 @@
+.Search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 700px;
+    background: rgba(3, 9, 94, 0.281);
+    border-radius: 60px;
+    padding: 2px 4px;
+    backdrop-filter: blur(4px) saturate(180%);
+}
+
+.Search-bar {
+    background: rgba(3, 9, 94, 0.062);
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 8px 10px;
+    font-size: 16px;
+    border-radius: 60px;
+    
+}
+
+::placeholder {
+    color: #005377;
+}
+
+.Search-icon {
+border: 0;
+border-radius: 50%;
+width: 40px;
+height: 40px;
+cursor: pointer;
+background: #052f5f;
+}
