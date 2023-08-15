@@ -8,9 +8,49 @@ width: 100%;
 .CreateTodo-button {
 border: 0;
 margin-left: 12px;
+border: 3px solid 052f5f;
 border-radius: 50%;
+position: relative;
 width: 50px;
 height: 50px;
 cursor: pointer;
 background: #052f5f;
+transition: all 0.6s eases;
+overflow: hidden;
+}
+
+.CreateTodo-button:hover {
+    background-color: #052f5f;
+    box-shadow: 0px 0px 20px whitesmoke;
+    
+}
+
+.CreateTodo-button::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    background-color: #052f5f;
+    z-index: -2;
+}
+
+.CreateTodo-button::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: -0%;
+    border-radius: 50%;
+    background-color: #052f5f;
+    z-index: -1;
+}
+
+.CreateTodo-button:hover {
+    background-color: #052f5f;
+    box-shadow: 0px 0px 20px whitesmoke;
+    
 }
