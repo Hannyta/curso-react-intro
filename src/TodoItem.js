@@ -1,10 +1,15 @@
+import { useLayoutEffect } from 'react';
+import'./TodoItem.css';
+
 function TodoItem(props) {
     return (
-      <li>
-        <span>V</span>
-        <p>{props.text}</p>
-        <span>X</span>
-      </li>
+      <ul>
+        <li>
+          <span>V</span> 
+          <p>{props.text}</p>
+          <span>X</span>
+        </li>
+      </ul>
     );
   }
 

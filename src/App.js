@@ -20,8 +20,8 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
       </header>
 
-      <TodoCounter  completed={defaultTodos.filter(todo => todo.completed).length} total={defaultTodos.length}/>
       <TodoSearch />
+      <TodoCounter  completed={defaultTodos.filter(todo => todo.completed).length} total={defaultTodos.length}/>
 
       <TodoList> 
         {defaultTodos.map( todo => (
