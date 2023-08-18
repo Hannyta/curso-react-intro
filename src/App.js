@@ -20,22 +20,24 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
       </header>
 
-      <TodoSearch />
-      <TodoCounter  completed={defaultTodos.filter(todo => todo.completed).length} total={defaultTodos.length}/>
+      <section className="Home">
+    
+        <TodoSearch />
+        <TodoCounter  completed={defaultTodos.filter(todo => todo.completed).length} total={defaultTodos.length}/>
 
-      <TodoList> 
-        {defaultTodos.map( todo => (
-          < TodoItem 
+        <TodoList> 
+          {defaultTodos.map( todo => (
+            < TodoItem 
             key={todo.text} 
             text={todo.text} 
             completed={todo.completed}
-          />
-        ))}
+            />
+            ))}
+        </TodoList>
 
-      </TodoList>
+        <CreateTodoButton />
 
-      <CreateTodoButton />
-
+      </section>
     </>
   );
 }
