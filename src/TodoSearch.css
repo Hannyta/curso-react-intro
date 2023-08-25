@@ -21,8 +21,8 @@
     
 }
 
-::placeholder {
-    color: #005377;
+.Search-bar::placeholder {
+    color: var(--azul-medio);
 }
 
 .Search-icon {
@@ -31,5 +31,5 @@ border-radius: 50%;
 width: 40px;
 height: 40px;
 cursor: pointer;
-background: #052f5f;
+background: var(--azul-oscuro);
 }

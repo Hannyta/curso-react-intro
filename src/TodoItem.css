@@ -1,3 +1,55 @@
+.TodoItem{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.TodoItem-p {
+    margin: 24px 0px 24px 24px;
+    line-height: 14px;
+    width: calc(100% - 100px);
+}
+
+.TodoItem-p--complete {
+    text-decoration: line-through;
+}
+
 li {
+    margin: 24px;
     list-style: none;
+    font-size: 18px;
+    background: rgba(247, 244, 244, 0.158);
+}
+
+.Icon {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 48px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.icon-check {
+    position: absolute;
+    left: 16px;
+    color: var(--azul-oscuro);
+}
+
+.icon-check--active {
+    color: var(--color-icon);
+}
+
+.icon-close {
+    position: absolute;
+    top: -22px;
+    right: 8px; 
+    color: #F56A68;
+}
+
+.icon-close:hover {
+    color: rgb(255, 0, 0);
 }

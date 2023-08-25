@@ -25,15 +25,17 @@ function App() {
         <TodoSearch />
         <TodoCounter  completed={defaultTodos.filter(todo => todo.completed).length} total={defaultTodos.length}/>
 
-        <TodoList> 
-          {defaultTodos.map( todo => (
-            < TodoItem 
-            key={todo.text} 
-            text={todo.text} 
-            completed={todo.completed}
-            />
-            ))}
-        </TodoList>
+        <div className='TodoList'>
+          <TodoList> 
+            {defaultTodos.map( todo => (
+              < TodoItem 
+              key={todo.text} 
+              text={todo.text} 
+              completed={todo.completed}
+              />
+              ))}
+          </TodoList>
+        </div>
 
         <CreateTodoButton />
 

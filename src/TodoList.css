@@ -1,0 +1,11 @@
+.TodoList {
+    padding: 2px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 14px var(--azul-oscuro);
+    background: rgba(247, 244, 244, 0.158);
+    backdrop-filter: blur(6px);
+}
+
+ul {
+    padding: 0px;
+}
