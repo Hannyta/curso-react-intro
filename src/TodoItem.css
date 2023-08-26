@@ -11,7 +11,7 @@
     width: calc(100% - 100px);
 }
 
-.TodoItem-p--complete {
+.TodoItem-p--completed {
     text-decoration: line-through;
 }
 
@@ -40,7 +40,7 @@ li {
 }
 
 .icon-check--active {
-    color: var(--color-icon);
+    color: green;
 }
 
 .icon-close {
