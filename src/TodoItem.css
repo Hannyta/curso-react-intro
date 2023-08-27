@@ -11,7 +11,7 @@
     width: calc(100% - 100px);
 }
 
-.TodoItem-p--complete {
+.TodoItem-p--completed {
     text-decoration: line-through;
 }
 
@@ -33,14 +33,27 @@ li {
     font-weight: bold;
 }
 
-.icon-check {
+.icon-UnCheck {
     position: absolute;
     left: 16px;
     color: var(--azul-oscuro);
 }
 
-.icon-check--active {
+.icon-Check {
+    display: none;
+}
+
+.icon-uncheck--active {
     color: var(--color-icon);
+}
+
+.icon-Check--active {
+    display: flex;
+    position: absolute;
+    left: 19px;
+    top: 4px;
+    color: green;
+    font-size: 20px;
 }
 
 .icon-close {
