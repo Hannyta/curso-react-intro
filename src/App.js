@@ -8,9 +8,9 @@ import React from 'react';
 
 const defaultTodos = [
   { text: 'Cortar cebolla', completed: true },
-  { text: 'Tomar el curso Intro a React.js', completed: false },
-  { text: 'Llorar con la llorona', completed: false },
-  { text: 'Tomar mate', completed: false },
+  { text: 'Terminar curso de intro a React.js', completed: false },
+  { text: 'Llorar con el código', completed: true },
+  { text: 'Dormir menos horas', completed: false },
 ]
 
 function App() {
