@@ -39,11 +39,7 @@ li {
     color: var(--azul-oscuro);
 }
 
-.icon-Check {
-    display: none;
-}
-
-.icon-uncheck--active {
+.icon-check--active {
     color: var(--color-icon);
 }
 

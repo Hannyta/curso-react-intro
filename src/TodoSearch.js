@@ -3,26 +3,23 @@ import'./TodoSearch.css';
 import {BiSearchAlt} from 'react-icons/bi';
 
 function TodoSearch() {
-    conts [searchValue, setSearchValue] = React.useState('');
+    const [searchValue, setSearchValue] = React.useState('');
 
     return (
 
         <div className='Search'>
             <input 
                 className='Search-bar'
-                placeholder="Cortar cebolla..."
+                placeholder='Cortar cebolla...'
                 value={searchValue}
-                onChange={
-                    (event) => {
-                        setSearchValue(event.target.value);
-                    }
-                }
+                onChange={(event) => {
+                    setSearchValue(event.target.value);
+                }}
             />
-            <button 
-                className='Search-icon'
+            <button className='Search-icon'
                 onClick={
                     (event) => {
-                        console.log('Diste click a Search');
+                        console.log('Diste click a search');
                         console.log(event.target);
                     }
                 }

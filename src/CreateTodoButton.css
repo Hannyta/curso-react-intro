@@ -6,7 +6,7 @@ width: 100%;
 margin: 46px 0;
 }
 
-.CreateTodo-button {
+.CreateTodoButton {
 border: 0;
 margin-left: 26px;
 border: 3px solid var(--azul-oscuro);
@@ -15,6 +15,7 @@ color: var(--color-icon);
 font-size: 24px;
 width: 50px;
 height: 50px;
+color: var(--color-icon);
 cursor: pointer;
 background: var(--azul-oscuro);
 transition: all 0.6s eases;
@@ -23,7 +24,7 @@ transition: ease 1s;
 animation: efecto 1.2s infinite;
 }
 
-.CreateTodo-button:hover {
+.CreateTodoButton:hover {
     transform: scale(1.1);
     transition: 0.3s;
     background-color: var(--azul-oscuro);

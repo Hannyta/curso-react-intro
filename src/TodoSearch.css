@@ -34,4 +34,6 @@ color: var(--color-icon);
 font-size: 26px;
 cursor: pointer;
 background: var(--azul-oscuro);
+color: var(--color-icon);
+font-size: 25px;
 }

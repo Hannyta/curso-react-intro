@@ -1,16 +1,12 @@
 import'./TodoItem.css';
-import {RiCheckboxBlankCircleFill} from 'react-icons/ri';
+import {BsCircle} from 'react-icons/bs';
 import {RiCloseLine} from 'react-icons/ri';
-import {FaCheck} from 'react-icons/fa';
 
 function TodoItem(props) {
     return (
         <li className='TodoItem'>
-          <i className={`Icon icon-UnCheck ${props.completed && 'icon-uncheck--active'}`}>
-            <RiCheckboxBlankCircleFill/>
-          </i> 
-          <i className={`Icon icon-Check ${props.completed && 'icon-Check--active'}`}>
-            <FaCheck/>
+          <i className={`Icon icon-check ${props.completed && 'icon-check--active'}`}>
+            <BsCircle/>
           </i> 
           <p className={`TodoItem-p ${props.completed && 'TodoItem-p--completed'}`}>
             {props.text}
