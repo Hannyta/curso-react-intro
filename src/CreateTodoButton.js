@@ -6,7 +6,17 @@ function CreateTodoButton() {
     return (
         <div className='CreateTodo'>
             <h3>Create new To-Do</h3>
-            <button className='CreateTodo-button'><BsFillFileEarmarkPlusFill size='32px' color='#44cac6'/></button>
+            <button 
+                className='CreateTodo-button'
+                onClick={
+                    (event) => {
+                        console.log('Le diste click');
+                        console.log(event);
+                        console.log(event.target);
+                    }
+                }  
+                ><BsFillFileEarmarkPlusFill/>
+            </button>
         </div>
     )
 }
