@@ -2,8 +2,10 @@ import React from 'react';
 import'./TodoSearch.css';
 import {BiSearchAlt} from 'react-icons/bi';
 
-function TodoSearch() {
-    const [searchValue, setSearchValue] = React.useState('');
+function TodoSearch({
+    searchValue,
+    setSearchValue,
+    }) {
 
     return (
 

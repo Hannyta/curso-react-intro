@@ -7,7 +7,7 @@ function CreateTodoButton() {
         <div className='CreateTodo'>
             <h3>Create new To-Do</h3>
             <button 
-                className='CreateTodo-button'
+                className='CreateTodoButton'
                 onClick={
                     (event) => {
                         console.log('Le diste click');
@@ -21,4 +21,4 @@ function CreateTodoButton() {
     )
 }
 
-export { CreateTodoButton };
+export {CreateTodoButton};
