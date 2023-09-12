@@ -7,13 +7,13 @@ import {FaCircle} from 'react-icons/fa';
 function TodoItem(props) {
   return (
       <li className='TodoItem'>
-          <i className={`icon iconUnCheck ${props.completed && 'iconUnCheck--hidden'}`} onClick={props.onComplete}>
+          <i className={`icon iconUnCheck ${props.completed && 'icon--hidden'}`} onClick={props.onComplete}>
           <FiCircle/>
           </i> 
-          <i className={`icon ${props.completed && 'iconBotoom iconCheck--hidden'}`}>
+          <i className={`icon iconBotoom ${!props.completed && 'icon--hidden'}`}>
             <FaCircle/>
           </i> 
-          <i className={`icon ${props.completed && 'iconBefore iconCheck--hidden'}`}>
+          <i className={`icon iconBefore ${!props.completed && 'icon--hidden'}`}>
             <FaCheck/>
           </i>
           <p className={`TodoItem-p ${props.completed && 'TodoItem-p--completed'}`}>

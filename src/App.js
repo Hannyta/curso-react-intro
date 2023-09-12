@@ -7,11 +7,11 @@ import { CreateTodoButton } from './CreateTodoButton';
 import React from 'react';
 
 const defaultTodos = [
-  { text: 'Cortar cebolla', completed: true },
+  { text: 'Cortar cebolla', completed: false },
   { text: 'Terminar curso de intro a React.js', completed: false },
-  { text: 'Llorar con el código', completed: true },
+  { text: 'Llorar con el código', completed: false },
   { text: 'Dormir menos horas', completed: false },
-  { text: 'Comer saludable', completed: true },
+  { text: 'Comer saludable', completed: false },
 ]
 
 function App() {
@@ -34,7 +34,8 @@ function App() {
   const completeTodo = (text) => {
     const newTodos = [...todos];
     const todoIndex = newTodos.findIndex(
-      (todo) => todo.text == text);
+      (todo) => todo.text == text
+    );
     newTodos[todoIndex].completed = true;
     setTodos(newTodos);
   }

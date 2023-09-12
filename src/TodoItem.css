@@ -39,11 +39,6 @@ li {
     color: var(--azul-oscuro);
 }
 
-
-.iconCheck--hidden {
-    display: none;
-}
-
 .iconBotoom {
     display: flex;
     position: absolute;
@@ -60,7 +55,7 @@ li {
     font-size: 20px;
 }
 
-.iconUnCheck--hidden {
+.icon--hidden {
     display: none;
 }
 
